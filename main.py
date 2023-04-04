@@ -1,44 +1,37 @@
-# count = 0
-# for number in range(1, 10):
-#     if number % 2 == 0:
-#        count += 1
-#        print(number)
-# print(f"We have {count} numbers")
+# items = [
+#     ("product1", 10)
+#     ("product2", 9)
+#     ("product3", 12)
+# ]
+# prices = list(map(lambda item: item[1], items))
+# print(prices)
 #
-# def greet1(first_name, last_name, age):
-#     print(f"Hello {first_name} {last_name} {age}")
-# greet1("uiedgeiu", "gxuyfc", "46")
-#
-# def greet(name) :
-#     print(f"hi {name}")
-# def get_greeting(name):
-#     return f"hi {name}"
-# print(greet("Lucja"))
-#
-# def multiply(*numbers):
-#    # print(numbers)
-#     total = 1
-#     for number in numbers:
-#         total *= number
-#     return total
-# print(multiply(3, 4, 1))
-#
-# def save_user(**user):
-#     print(user)
-# save_user(id=1, name="John")
+# x = list(filter(lambda item: item[1] >= 10, items))
+# print(x)
 
-def FizzBuzz():
-    tekst = ""
-    for number in range(1, 100):
-        if number % 15 == 0:
-            tekst += "FizzBuzz\n"
-        elif number % 3 == 0:
-            tekst += "Fizz\n"
-        elif number % 5 == 0:
-            tekst += "Buzz\n"
-        else:
-            tekst += ""
-    return tekst
-print(FizzBuzz())
+#
+# students = [
+#   {"imie": "Tomek", "wiek": 20},
+#   {"imie": "Karolina", "wiek": 18}
+# ]
+# students.sort(key=lambda student: student["wiek"])
+# print(students[0])
+
+
+
+def Winner(file):
+  with open('mecz.txt', 'r') as file:
+    results = file.readline()
+  count = 0
+  for i in results:
+    if i+1 != i:
+      count += 1
+
+return Winner
+
+
+
+
+
 
 

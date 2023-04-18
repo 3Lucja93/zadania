@@ -1,37 +1,19 @@
-# items = [
-#     ("product1", 10)
-#     ("product2", 9)
-#     ("product3", 12)
-# ]
-# prices = list(map(lambda item: item[1], items))
-# print(prices)
-#
-# x = list(filter(lambda item: item[1] >= 10, items))
-# print(x)
+tup = ('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's')
+str = ''.join(tup)
+print(str)
 
-#
-# students = [
-#   {"imie": "Tomek", "wiek": 20},
-#   {"imie": "Karolina", "wiek": 18}
-# ]
-# students.sort(key=lambda student: student["wiek"])
-# print(students[0])
+myDict = {'name': 'John', 'country': 'Norway'}
+mySeparator = ', '
+y = myDict.values()
+x = mySeparator.join(myDict.values())
+print(x)
+print(y)
 
-
-
-def Winner(file):
-  with open('mecz.txt', 'r') as file:
-    results = file.readline()
-  count = 0
-  for i in results:
-    if i+1 != i:
-      count += 1
-
-return Winner
-
-
-
-
-
-
-
+car = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
+}
+x = car.setdefault('model', 'Bronco')
+print(x)
+print(car)
